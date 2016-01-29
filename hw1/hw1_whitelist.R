@@ -1,4 +1,4 @@
-allowed_files = c("hw0.Rmd",
+allowed_files = c("hw1.Rmd",
                   "README.md",
                   "wercker.yml")
 
