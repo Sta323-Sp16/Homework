@@ -1,3 +1,5 @@
+setwd("../")
+
 if (file.exists("extra_credit.R"))
   source("extra_credit.R")
 
