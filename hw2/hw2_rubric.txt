@@ -1,6 +1,6 @@
 ## Grading Rubric
 
-* Only work turned in by the deadline +5 minutes should be considered
+* Only work turned in by the deadline will be considered
 
 * 20 pts total for the assignment
 
@@ -15,9 +15,9 @@
     * Elegance of approach / code
     * Clarity of code (this includes things like comments, variable names, etc.)
     * Consistency of coding style
-    * Code efficiency (painfully inefficient code should be penalized)
+    * Code efficiency (painfully inefficient code will be penalized)
 
-* Feedback should include suggestions on how to improve the code / writeup (opened as issues or pull requests on github).
+* Feedback will include suggestions on how to improve the code / writeup.
 
-* Extra Credit - up to +2.5 for each question, use the same criteria as other functions
+* Extra Credit - up to +2.5 for each question, same criteria as other functions
 
