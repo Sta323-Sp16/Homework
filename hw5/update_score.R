@@ -26,9 +26,12 @@ for(p in pp$Precinct)
     pred_i = which(pred$Precinct == p)
 
     if (length(pred_i) == 0)
-        stop("Precinct ",p," missing from predicted boundaries.")
-
-    score = score + suppressWarnings(gArea(gSymdifference(pred[pred_i,], pp[pp_i,])))
+    {
+        warning("Precinct ",p," missing from predicted boundaries.")
+        score = score + suppressWarnings(gArea(pp[pp_i,]))
+    } else {
+        score = score + suppressWarnings(gArea(gSymdifference(pred[pred_i,], pp[pp_i,])))
+    }
 }
 
 score = score / suppressWarnings(gArea(pp))
