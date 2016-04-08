@@ -16,7 +16,7 @@ pred = gBuffer(readOGR("precincts.json", layer="OGRGeoJSON", verbose=FALSE),
                width=0, byid=TRUE)
 load(file = "pp.Rdata")
 
-if (!"Precinct" %iN% names(pp))
+if (!"Precinct" %in% names(pp))
     stop("Predictions must have Precinct attribute")
 
 score = 0
