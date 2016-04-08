@@ -14,7 +14,10 @@ if (!file.exists("precincts.json"))
 
 pred = gBuffer(readOGR("precincts.json", layer="OGRGeoJSON", verbose=FALSE),
                width=0, byid=TRUE)
+
 load(file = "pp.Rdata")
+pp = spTransform(pp, CRS("+proj=longlat +datum=WGS84"))
+
 
 if (!"Precinct" %in% names(pp))
     stop("Predictions must have Precinct attribute")
